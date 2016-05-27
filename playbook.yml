@@ -1,0 +1,55 @@
+---
+- hosts: all
+  vars:
+  sudo: True
+  tasks:
+    - name: Install packages
+      pkg:
+      with_items:
+        - base_devel
+        - emacs
+        - xarchiver
+        - sshfs
+        - ranger
+        - python2-pylint
+        - python-pylint
+        - flake8
+        - pasystray
+        - ttf-inconsolata
+        - ttf-source-code-pro
+        - msmtp
+        - weechat
+        - net-tools
+        - mupdf
+        - unzip
+        - yapf
+        - remmina
+        - vagrant
+        - ntpdate
+        - htop
+        - unrar
+        - mosh
+        - docker
+        - git
+        - avahi
+        - nss-mdns
+        - bpython
+        - bpython2
+        - p7zip
+        - pygtk
+        - python2-dbus
+        - python2-pip
+        - python2-virtualenv
+        - tigervnc
+        - scrot
+        - offlineimap
+        - stow
+        - freerdp
+        - libvncserver
+        - wish
+        - gtk
+        - i3
+        - compton
+        - nodejs
+        - npm
+        - bower
